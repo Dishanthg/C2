@@ -1,8 +1,7 @@
 terminal 1
 
-cd ~/simplec2/server   # or wherever your main.py actually is
-# If venv not active:
-# source venv/bin/activate   (or global if you installed without venv)
+source venv/bin/activate 
+cd ~/simplec2/server 
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 terminal 2
